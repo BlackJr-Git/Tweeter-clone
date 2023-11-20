@@ -1,7 +1,15 @@
+// import Tweet from "./tweet";
+import { Tweet } from "../components"
 
 
 function Tweets() {
-    return
+    return (
+      <>
+        <Tweet />
+        <Tweet />
+      </>
+      
+    )
 }
 
   export default Tweets;

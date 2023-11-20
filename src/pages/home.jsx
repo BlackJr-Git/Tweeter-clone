@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header } from '../components';
+import { Header, Tweets } from '../components';
 import  { TweetEditor } from '../components';
 
 function Home() {
@@ -7,6 +7,7 @@ function Home() {
     <main className="timeline">
       <Header />
       <TweetEditor />
+      <Tweets />
     </main>
   );
 }
