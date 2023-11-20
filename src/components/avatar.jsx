@@ -1,8 +1,11 @@
 
-function Avatar() {
+function Avatar({source}) {
+
+    // let source = "src\images\profile-photo.png" ;
+
     return (
         <div className="avatar"> 
-            <img src="src\images\profile-photo.png" alt="avatar"  />
+            <img src={source} alt="avatar"  />
         </div>
     )
 }
