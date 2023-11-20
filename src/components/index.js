@@ -13,3 +13,6 @@ export {default as TweetContent} from "./tweet-content" ;
 export {default as TweetBody } from "./tweet-body" ;
 export {default as TweetActions } from "./tweet-actions" ;
 export {default as TweetAction } from "./tweet-action" ;
+export {default as TweetTitle } from "./tweet-title" ;
+export {default as TweetImage } from "./tweet-image" ;
+export {default as TweetText } from "./tweet-text" ;
