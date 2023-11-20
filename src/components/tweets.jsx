@@ -8,7 +8,6 @@ function Tweets() {
         <Tweet />
         <Tweet />
       </>
-      
     )
 }
 
