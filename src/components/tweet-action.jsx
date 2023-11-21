@@ -1,9 +1,9 @@
 
-function TweetAction() {
+function TweetAction({imgsrc, actionCount}) {
     return (
         <div className="tweet-action">
-            <img src="src\images\Icons\Retweet.png" alt="" /> 
-            <p>19</p>
+            <img src={imgsrc} alt="" /> 
+            <p>{actionCount}</p>
         </div>
     )
 }
