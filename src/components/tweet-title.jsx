@@ -1,10 +1,10 @@
 import { TweetTitleAuthor,TweetTitleDetails } from "../components";
 
-function TweetTitle() {
+function TweetTitle({Author}) {
     return (
         <div className="tweet-title">
-            <TweetTitleAuthor />
-            <TweetTitleDetails />
+            <p className="tweet-title-author"> {Author} </p>
+            <p className="tweet-title-details">{userName} . {time} </p>
         </div>
     )
 }

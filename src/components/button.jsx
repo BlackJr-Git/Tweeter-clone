@@ -1,7 +1,7 @@
 
-function Button() {
+function Button({texte}) {
     return (
-            <button className="button">Tweet</button>
+            <button className="button"> Tweet </button>
     )
 }
 
