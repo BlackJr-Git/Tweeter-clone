@@ -1,4 +1,4 @@
-import { TweetImage, TweetText, TweetTitle } from "../components";
+import { TweetTitle } from "../components";
 
 function TweetBody({texte, imgsrc}) {
 
