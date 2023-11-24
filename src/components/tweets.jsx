@@ -1,9 +1,16 @@
 // import Tweet from "./tweet";
+import { useState } from "react";
 import { Tweet,TweetTitle } from "../components"
 
 
 function Tweets() {
-    return (
+    
+  const [like, setlike] = useState(184)
+   const incrementLike = () => {
+      setlike(like + 1)
+   }
+
+  return (
       <>
         <Tweet 
           author={"CNN"}
@@ -11,7 +18,8 @@ function Tweets() {
           tweetTime={"7m"}
           tweetAvatar={"src\\images\\tweet-profile-photo.png"}
           tweetText={'President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a "major breakthrough" that would serve to both strengthen the US steel industry and combat the global climate crisis.'}
-          reply = {57} retweet={144} react={184}
+          reply = {57} retweet={144} react={like}
+          handleClick={incrementLike}
         />
 
         <Tweet 
@@ -21,7 +29,8 @@ function Tweets() {
           tweetAvatar={"src\\images\\image 1.png"}
           tweetImage={"src\\images\\tweet-image.png"} 
           tweetText={"Gardening boomed during the pandemic. Six Black writers share how it has helped them re-establish, and reimagine, a connection to cultivation and the land."}  
-          reply = {"19"} retweet={"48"} react={"482"}
+          reply = {"19"} retweet={"48"} react={"482"} 
+          handleClick={incrementLike}
         />
 
         <Tweet 

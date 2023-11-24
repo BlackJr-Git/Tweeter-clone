@@ -10,6 +10,8 @@ function Tweet({
   reply,
   retweet,
   react,
+  handleClick
+  
 }) {
   return (
     <div className="tweet">
@@ -23,6 +25,7 @@ function Tweet({
         reply={reply}
         retweet={retweet}
         react={react}
+        handleClick={handleClick}
       />
     </div>
   );

@@ -1,7 +1,7 @@
 
 import {TweetAction } from "../components"
 
-function TweetContent({texte, imgsrc,author, userName, time , reply, retweet, react}) {
+function TweetContent({texte, imgsrc,author, userName, time , reply, retweet, react, handleClick}) {
             
     
         return (
@@ -24,9 +24,9 @@ function TweetContent({texte, imgsrc,author, userName, time , reply, retweet, re
                 </div>
                 
                 <div className="tweet-actions">
-                    <TweetAction imgsrc={"src\\images\\Icons\\Reply.png"} actionCount={reply} />
+                    <TweetAction imgsrc={"src\\images\\Icons\\Reply.png"} actionCount={reply}  />
                     <TweetAction imgsrc={"src\\images\\Icons\\Retweet.png"} actionCount={retweet} />
-                    <TweetAction imgsrc={"src\\images\\Icons\\React.png"} actionCount={react} />
+                    <TweetAction imgsrc={"src\\images\\Icons\\React.png"} actionCount={react} incrementAction={handleClick} />
                     <TweetAction imgsrc={"src\\images\\Icons\\Share.png"} actionCount={null} />
                 </div>
             </div>
